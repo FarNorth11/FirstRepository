@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5C831FA200B7C0B0A604FF5149C5D7220008199F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5C831FA200B7C0B0A604FF5149C5D7220008199F" : 9223372036854775807,
+    "ED1288C05F66D4AE7252F92E5E1FDAFF4C4975B3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6191BF4C-15BB-4285-9411-C7DA6524A459",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5C831FA200B7C0B0A604FF5149C5D7220008199F" : "FirstRepository\/",
+    "ED1288C05F66D4AE7252F92E5E1FDAFF4C4975B3" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "upload2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "upload2\/upload2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FarNorth11\/FirstRepository",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5C831FA200B7C0B0A604FF5149C5D7220008199F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FarNorth11\/React-H5.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ED1288C05F66D4AE7252F92E5E1FDAFF4C4975B3"
+    }
+  ]
+}
