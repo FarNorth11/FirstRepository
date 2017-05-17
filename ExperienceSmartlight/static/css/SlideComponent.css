@@ -1,0 +1,246 @@
+/*range*/
+
+/*设置贴图range*/
+
+.rangeDiv {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+/*.rangeDiv1{*/
+
+/*position: relative;*/
+
+/*width:100%;*/
+
+/*height: 100%;*/
+
+/*}*/
+
+.rangeDiv h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  font-family: '黑体';
+  left: 10px;
+  color: #848484;
+  top: 0.7rem;
+}
+
+.range {
+  display: inline-block;
+  position: absolute;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  /*width:100%;*/
+  /*margin:1rem auto 0;*/
+  /*color:#ffffff;*/
+}
+
+.range .label1,
+.label2 {
+  position: absolute;
+  width: 1.33rem;
+  height: 1.33rem;
+  font-size: 15px;
+  font-family: '黑体';
+  color: black;
+  text-align: right;
+  vertical-align: middle;
+  top: 2.6rem;
+}
+
+.range .label1 {
+  left: 0;
+  background-image: url("../../static/img/highImg.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.range .label2 {
+  right: 0;
+  background-image: url("../../static/img/lowImg.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.range .label1.off,
+.label2.off {
+  opacity: 0;
+}
+
+/*!*进度条组件样式*!*/
+
+.range .rangeblock {
+  position: relative;
+  left: auto;
+  right: auto;
+  margin: auto;
+  top: 0.8rem;
+  width: 75%;
+  height: 3rem;
+  /*margin:-0.495rem 2.25rem 0;*/
+  /*background-color:gray;*/
+  /*background: -webkit-linear-gradient(left, red , blue);*/
+}
+
+/*.range .rangeblock .rangevalue{*/
+
+/*display:inline-block;*/
+
+/*position: absolute;*/
+
+/*width:18.39rem;*/
+
+/*height:0.33rem;*/
+
+/*top:1rem;*/
+
+/*opacity:1;*/
+
+/*z-index:3;*/
+
+/*}*/
+
+/*控制滑杆在视图上的位置 padding*/
+
+.__range>label {
+  position: relative;
+  display: block;
+  width: 99%;
+  margin: 0 auto;
+  padding: 1.8rem 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/*.__range>label>input{position:absolute;z-index:2;top:0;height:3rem;display:block;margin:0 auto;width:100%;opacity:0;}*/
+
+/*.__range>label>input::-webkit-slider-runnable-track {*/
+
+/*height: 3rem;*/
+
+/*}*/
+
+/*.__range>label>input::-webkit-slider-thumb {*/
+
+/*padding:.9rem;*/
+
+/*}*/
+
+/*控制替代的游标  他之前的思路是隐藏本来的滑动条,自己设置一个*/
+
+.__range>label>i {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.3rem;
+  background: rgb(255, 159, 187);
+  border-radius: 3rem;
+  border: .18rem solid rgb(255,211,224);
+  z-index: -1;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  top: .2rem;
+  left: 0;
+  box-sizing: border-box;
+  font-family: '楷体';
+  opacity: 0;
+}
+
+/*.__range>label>i:before,.__range>label>i:after{position:absolute;top:50%;margin-top:-.1rem;display:inline-block;content:"";width:10000%;height:.3rem;}*/
+
+/*.__range>label>i:before{right:2.3rem;background-color:rgb(255, 159, 187);}*/
+
+/*.__range>label>i:after{left:2.3rem;background-color:rgb(222,222,222);}*/
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 10px;
+  /*这个属性设置使填充进度条时的图形为圆角*/
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/*滑轨的宽度,样式*/
+
+.t-range input[type=range]::-webkit-slider-runnable-track {
+  height: 5px;
+  /*滑轨的宽度*/
+  border-radius: 10px;
+  /*将轨道设为圆角的*/
+  /*background: -webkit-linear-gradient(left, black , white); */
+  background: -webkit-linear-gradient(left,#ff0000,#ff7f00,#ffff00,#80ff00,#00ff00,#00ff80,#00ffff,#0080ff,#0000ff,#8000ff,#ff00ff,#ff007f);
+  /*box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; !*轨道内置阴影效果*!*/
+}
+
+.t-range.do input[type=range]::-webkit-slider-runnable-track {
+  background: grey;
+}
+
+/*滑块颜色*/
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  margin-top: -10px;
+  /*设置滑块在滑轨上的位置(上下)*/
+  background: #fdfdfd;
+  border-radius: 50%;
+  /*外观设置为圆形*/
+  border: solid 0.125em rgba(205, 224, 230, 0.5);
+  /*设置边框颜色*/
+  /*box-shadow: 0 .125em .125em #3b4547; !*添加底部阴影*!*/
+}
+
+.t-range2 input[type=range]::-webkit-slider-runnable-track {
+  height: 5px;
+  border-radius: 10px;
+  /*将轨道设为圆角的*/
+  /*background: -webkit-linear-gradient(left, black , white);*/
+  background: -webkit-linear-gradient(left,#575555,grey, white);
+  box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em rgba(192, 192, 192, 0.89);
+  /*轨道内置阴影效果*/
+}
+
+.t-range2.do input[type=range]::-webkit-slider-runnable-track {
+  background: grey;
+}
+
+/*控制替代的游标  他之前的思路是隐藏本来的滑动条,自己设置一个*/
+
+.t-range2 .__range>label>i {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 2.3rem;
+  /*background:rgb(255, 159, 187);*/
+  background: white;
+  border-radius: 0rem;
+  /*border:.18rem solid rgb(255,211,224);*/
+  border: .18rem solid white;
+  z-index: 6666;
+  text-align: center;
+  color: #b4b4b4;
+  font-weight: bold;
+  font-size: 1rem;
+  top: -0.8rem;
+  left: 0;
+  box-sizing: border-box;
+  /*font-family:Arial;*/
+  opacity: 1;
+}

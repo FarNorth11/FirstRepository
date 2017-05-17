@@ -1,0 +1,354 @@
+/*定时页面界面样式*/
+
+
+.Timing{
+    background: #efeff4;
+    /*     position:relative; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+nav.ios {
+    top: 0px;
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+
+
+    padding-top: 0;
+    height: 64px;
+    line-height: 84px;
+    background: #4c91fc;
+}
+nav.android {
+    top: 0px;
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+
+    padding-top: 0;
+    height: 73px;
+    line-height: 73px;
+    background: #4c91fc;
+}
+
+.Time-Content{
+    /* min-height: 30.65rem; */
+    /* background: green; */
+    /* height: 100%; */
+    /* min-height: 100%; */
+    /*min-height: 90%;*/
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+}
+.Time-Content>p{
+    /* margin-top: 19.5rem; */
+    color:#a9a9a9;
+    font-size: 1.33rem;
+    text-align: center;
+    font-weight: bold;
+}
+.add-time{
+    position: fixed;
+    bottom:0%;
+    width: 100%;
+    height:4rem;
+    line-height: 4rem;
+    font-size: 1.42rem;
+    font-weight: bold;
+    color:#ef4f4f;
+    text-align: center;
+    background:#fff;
+    border-top: 1px solid #c6c6c6;
+}
+.content li {
+    height:8rem;
+    color:green;
+}
+.noneContent {
+    font-weight: bold;
+    color: #a9a9a9;
+    background: #efeff4;
+    font-size: 16px;
+    margin-top: 75%;
+    text-align: center;
+}
+.haveContent{
+    /* background:yellow; */
+    background:#ffffff;
+}
+#TimeSelectstyle{
+    top: 64px;;
+    height: 40%!important;
+}
+#TimeSelectstyle .selectbtn{
+    display:none;
+}
+.revise0 {
+    font-family: 黑体;
+}
+.revise1{
+    border-bottom:1px solid #cccccc;
+    color:#000!important;
+    display:none;
+}
+.revise2{
+    display:none;
+}
+.revise3{
+    display:none!important;
+}
+.timeSelect .time .revise4{
+    font-size: 24px;
+    top: 0%!important;
+    left: 41%!important;
+}
+
+.timeSelect .time .revise5{
+    font-size: 24px;
+    top: 0%!important;
+    left: 55%!important;
+}
+.select{
+    width: 100%;
+    position: absolute;
+    /*top: 60%;*/
+    top:55%;
+    box-sizing: border-box;
+    font-family: 黑体;
+    background: white;
+    z-index: 9999;
+}
+.select-repeat , .select-switch{
+    padding: 0px 15px;
+    color: #555555;
+    line-height: 2.54rem;
+    display: flex;
+    height: 2.54rem;
+    z-index: 9999;
+    font-size: 16px;
+    padding: 1.21rem 16px;
+}
+.select-repeat{
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.select-switch{
+    border-bottom: 1px solid #dcdcdc;
+}
+.timeselect>.time>.timetext{
+    border-bottom: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+}
+.select-left, .switch-left,.switch-right{
+    flex:1;
+}
+.select-right{
+    flex:5;
+    text-align: right;
+    color:#848484;
+}
+.select-right i{
+    font-size: 19px;
+    margin-left: 5px;
+}
+.timeSelect>section:first-child{
+    background: rgba(0, 0, 0, 0)!important;
+}
+.switch-off {
+    width:50px;
+    height:30px;
+    background: url("../img/switch-off.png") no-repeat right center;
+    background-size: contain;
+}
+.switch-on{
+    width:50px;
+    height:30px;
+    background: url("../img/switch-on.png") no-repeat right center;
+    background-size: contain;
+}
+
+
+
+
+/*设备开关选择*/
+.Repeat-box {
+    background:#efeff4;
+    /* position: relative; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 10000;
+}
+
+.Repeat-box ul{
+    background:#fff;
+}
+.Repeat-box ul li{
+    height:4rem;
+    border-top:1px solid #dcdcdc;
+    color:#000000;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    font-family: 黑体;
+    padding: 0 10px;
+}
+.Repeat-box ul li:last-child{
+    border-bottom:1px solid #c7c7c7;
+}
+.Repeat-box ul li{
+    display:flex;
+}
+.Repeat-box ul li span, .Repeat-box ul li i{
+    flex:1;
+}
+.Repeat-box ul li span{
+    text-align: left;
+}
+
+
+.on{
+    background: url(../img/select.png) no-repeat center right;
+    background-size: 24px 24px;
+    text-align: right;
+}
+
+.sure{
+    /*height: 40px;*/
+    text-align: center;
+    display: flex;
+    background: white;
+    /*border-bottom: 1px solid #dcdcdc;
+    line-height: 40px;*/
+    font-size: 17px;
+    font-family: 黑体;
+    position: fixed;
+    width: 95%;
+}
+.sure span {
+    flex:1;
+}
+.sure span:nth-child(1){
+     text-align: left;
+}
+.sure span:nth-child(2){
+     text-align: right;
+}
+
+/*有定时数据样式*/
+.haveContent ul li {
+    display:flex;
+    padding: 14px 16px;
+    /* border: 1px solid gray; */
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+}
+.addLeft{
+    flex:1;
+}
+.addRight {
+    flex:1;
+}
+.addLeft p:nth-child(1){
+    color: #555555;
+    font-size: 24px;
+}
+.addLeft p:nth-child(2){
+    color: #848484;
+    font-size: 12px;
+}
+.timeselect{
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.timeSelect>.timeselect>.selectbtn{
+    border-bottom: 1px solid #cccccc;
+}
+
+.div2{
+    animation:  opacity2  .5s  linear ;
+}
+
+@keyframes  opacity2{
+    0%{opacity: 0;}
+    25%{opacity:.25;}
+    50%{opacity:.5;}
+    75%{opacity:.75;}
+    100%{opacity:1;}
+}
+
+
+.masking{
+    z-index: 9999;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .5;
+}
+
+
+.sure{
+    /*height: 40px;*/
+    text-align: center;
+    display: flex;
+    background: white;
+    /*border-bottom: 1px solid #dcdcdc;
+    line-height: 40px;*/
+    font-size: 17px;
+    font-family: 黑体;
+    position: fixed;
+    width: 95%;
+}
+.sure span {
+    flex:1;
+}
+.sure span:nth-child(1){
+    text-align: left;
+}
+.sure span:nth-child(2){
+    text-align: right;
+}
+
+.masking{
+    z-index: 9999;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .5;
+}
+.RepeatAdd {
+    width: 94%;
+    position: absolute;
+    top: 0%;
+    height: 48px;
+    background: #4c91fc;
+    padding: 35px 3% 0;
+    z-index: 999;
+}
+.RepeatAdd div{
+    font-size: 16px;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+    font-family: 黑体;
+}
+.RepeatAdd span:nth-child(1){
+    width:20px;
+    height:20px;
+    background:url("../img/return.png") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    left: 7%;
+}
+
+.RepeatAdd span:nth-child(2){
+    color: #fff;;
+}

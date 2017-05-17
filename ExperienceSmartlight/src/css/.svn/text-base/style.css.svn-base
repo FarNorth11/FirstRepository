@@ -1,0 +1,195 @@
+@import url(../../../common/static/reset.css);
+@import url(../../../common/static/common.css);
+/* @import url(../../../common/static/mediaQuery.css); */
+html,body,.app-body {
+    height: 100%;
+    overflow: hidden;
+}
+.app-body, .slide-up, .slide-down,main {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.app_bgimghg{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+    background: url('../img/bgImg_warm.jpg') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.app_bgimghg.cold{
+    background: url('../img/bgImg_cold.jpg') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.lightDiv{
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    height: 70%;
+    width: 30%;
+    margin: -15% 0 0 -10%;
+    /*background: url('../img/light_1.png') no-repeat;*/
+    background-image: url('../img/lightList/light_0000.png');
+    opacity: 1;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    text-align: center;
+    z-index: 6;
+}
+
+.lightDiv.off{
+    display: none;
+}
+.turnDiv_shadow{
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    height: 70%;
+    width: 30%;
+    margin: -15% 0 0 -10%;
+    /*background: url('../img/light_1.png') no-repeat;*/
+    background-image: url('../img/lightList/light_0000.png');
+    opacity: 1;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    text-align: center;
+    z-index: 5;
+}
+.turnDiv_shadow.off{
+    background-image: url('../img/lightList/light_off.png');
+    -webkit-background-size: 100% 100%;
+}
+
+.turnDiv{
+    position: absolute;
+    display: inline-block;
+    width: 3.22rem;
+    height: 3.22rem;
+    text-align: center;
+    background: red;
+    bottom: 2rem;
+    right:1.5rem;
+    background: url('../img/icon-turnOff.png') no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.turnDiv span{
+    color: #ffffff;
+    font-size: 1.2rem;
+    /* padding-top: 3.03rem; */
+    padding-top: 3.52rem;
+    display: inline-block;
+}
+
+.enableView.off{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: grey;
+    opacity: .5;
+    top:50%;
+    z-index: 999999;
+
+}
+
+.btnListDiv{
+    position: relative;
+    height: 18%;
+    width: 100%;
+    border-bottom: solid 1px #d6d6d6;
+}
+.btnListDiv .mode{
+    display: inline-block;
+    width: 20%;
+    padding-top: 32px;
+    /*padding-bottom: 27px;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px 40px;
+    color: #848484;
+    font-size: 1.2rem;
+    line-height: 10rem;
+    text-align: center;
+}
+
+.btnListDiv .mode.on{
+    color: #4c91fc;
+}
+
+.slideDiv{
+    position: relative;
+    height: 32%;
+    width: 100%;
+}
+
+.slideDiv .colorSlide{
+    width: 100%;
+    height:100%;
+
+}
+
+.slideDiv .saturationSlide{
+    width: 100%;
+    height:100%;
+
+}
+
+/*@import url(./../../../common/src/lib/range.css);*/
+@import url(./SlideComponent.css);
+@import url(./CellComponent.css);
+
+
+@import url(../../../common/static/mediaQuery.css);
+@import url(../../../common/static/TimeSelect.css);
+@import url(./expAir_TimingCom.css);
+/*@import url(./TimingCom.css);*/
+
+@import url(./YYScale.css);
+
+/*!* range样式调整 *!*/
+/*设置游标滑块的样式*/
+/*.__range>label>i{width:1.5rem;height:1.5rem;background-color:#fafafa;font-size:0;border-color:#e4e4e4;}*/
+/*.__range>label>i:before{background-color:rgb(68,181,223);right:1.4rem;border-right-width:0; }*/
+/*.__range>label>i:after{background-color: rgb(229, 229, 229);left:1.4rem;border-left-width:0;}*/
+/*!*.__range>label>i:before,.__range>label>i:after{margin-top:-.26rem;height:0.33rem;border:1px solid #dcdcdc;}*!*/
+
+/*.__range>label>input::-webkit-slider-runnable-track {*/
+    /*height: 4rem;*/
+/*}*/
+/*.__range>label>input::-webkit-slider-thumb {*/
+    /*padding:.9rem;*/
+/*}*/
+
+
+/*.temperate .t-range{*/
+    /*width:18.39rem;*/
+    /*margin:1.72rem auto 0;*/
+/*}*/
+
+/*.range .rangeblock .slider-runnable-track {*/
+    /*border: none;*/
+    /*position: absolute;*/
+    /*width:18.39rem;*/
+    /*height:1.33rem;*/
+    /*top:1rem;*/
+    /*display:inline-block;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
