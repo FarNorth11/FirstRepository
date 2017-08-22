@@ -1,0 +1,291 @@
+/**
+   TimeView  定时页面
+
+**/
+
+.ios { padding-top: 64px; box-sizing: border-box; }
+.android { padding-top: 73px; box-sizing: border-box; }
+.ios:before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 64px; background: #4c91fc; }
+.android:before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 73px; background: #4c91fc; }
+
+
+.Timing-page nav .back {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    height: 2rem;
+    width: 100px;
+    background: url(../img/return.png) no-repeat 16px center;
+    background-size:  28% auto;
+}
+.Timing-page nav span {
+    color: #fff;
+}
+
+.Timing-page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #efeff4;
+    overflow: auto;
+}
+
+.Timing-page .addTimingBtn{
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background: white;
+    bottom: 0rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #ef4f4f;
+
+}
+
+.Timing-page>.cellDiv{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 14%;
+}
+
+.Timing-page>.cellDiv>div:last-child{
+    border-bottom: solid 1px #848484;
+}
+
+.Timing-pageYYYYY{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #efeff4;
+    overflow: auto;
+}
+
+.addYYY{
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background: white;
+    bottom: 0rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #ef4f4f;
+
+}
+
+
+.addtimeselect{
+    position: absolute;
+    top:4rem;
+    width:100%;
+    height:14.67rem;
+    z-index: 99999;
+    background: white;
+}
+.addtimeselect>.addtime{
+    height:14.67rem;
+    width: 100%;
+    position: relative;
+    overflow:hidden !important;
+}
+
+.addtimeselect>.addtime>section.hour,.addtimeselect>.addtime>section.minute{
+    display:inline-block;
+    height:100%;
+    z-index:5;
+    opacity:0;
+    position: absolute;
+}
+.addtimeselect>.addtime>section.hour{
+    left:0%;
+}
+.addtimeselect>.addtime>section.minute{
+    left:50%;
+}
+
+
+.addtimeselect>.addtime>.timetext{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    line-height:2.75rem;
+    height:2.75rem;
+    width:100%;
+    border-bottom:1px solid #cccccc;
+    border-top:1px solid #cccccc;
+    box-sizing:border-box;
+}
+
+.addtimeselect>.addtime>.timetext>.hour{
+    position: absolute;
+    left:33%;
+    color:#666666;
+    font-size:14px;
+}
+.addtimeselect>.addtime>.timetext>.minute{
+    position:absolute;
+    left:70%;
+    color:#666666;
+    font-size:14px;
+}
+.addtimeselect>.addtime>.timetext>.status{
+    display: none;
+    position: absolute;
+    /* right:10%;*/
+    right: 10%;
+    color:#666666;
+    font-size:14px;
+}
+
+.addtimeselect>.addtime>.timetext>.show {
+    display: inline-block;
+}
+
+.addtimeselect>.addtime>.hourvalue,.addtimeselect>.addtime>.minutevalue{
+    /*width:4.67rem;*/
+    font-size:18px;
+    color:#323232;
+    position: absolute;
+    z-index: 4;
+    text-align:center;
+    margin-top:-2.73rem;
+}
+.addtimeselect>.addtime>.hourvalue{
+    left:30%;
+}
+.addtimeselect>.addtime>.minutevalue{
+    left:56%;
+}
+
+.addtimeselect>.addtime>.hourvalue>span,.addtimeselect>.addtime>.minutevalue>span{
+    line-height:2.73rem;
+    height:2.73rem;
+    display:block;
+}
+.addtimeselect>.addtime>.hourvalue>.line1,.addtimeselect>.addtime>.minutevalue>.line1{
+    opacity:0.2;
+}
+.addtimeselect>.addtime>.hourvalue>.line2,.addtimeselect>.addtime>.minutevalue>.line2{
+    opacity:0.5;
+}
+.addtimeselect>.addtime>.hourvalue>.line3,.addtimeselect>.addtime>.minutevalue>.line3{
+    line-height:3.75rem;
+    height:3.75rem;
+}
+.addtimeselect>.addtime>.hourvalue>.line4,.addtimeselect>.addtime>.minutevalue>.line4{
+    opacity:0;
+}
+
+.cellPart{
+    position: absolute;
+    width: 100%;
+    height: 7rem;
+    background: white;
+    top: 20rem;
+}
+
+.cellPart span{
+    display: block;
+    width:100%;
+    height: 100%;
+    line-height: 3.5rem;
+}
+.cellPart span {
+    display: block;
+    position: relative;
+    width:100%;
+    height: 100%;
+    line-height: 3.5rem;
+}
+.cellPart span:first-child{
+    border-bottom: solid 1px #cccccc;
+}
+.cellPart>span.cellPart_cell1>.cellLabel1{
+    display: inline-block;
+    position: absolute;
+    left: 1rem;
+
+}
+.cellPart>span.cellPart_cell1>.cellLabel2{
+    display: inline-block;
+    position: absolute;
+    /*width: 16rem;*/
+    right: 2rem;
+    margin-right: 1rem;
+}
+
+.cellPart>span.cellPart_cell1>.cellLabel2>.arrowImg{
+    display: inline-block;
+    position: absolute;
+    right: -2rem;
+    width: 2rem;
+    top:0.7rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1rem 1.5rem;
+
+}
+
+.cellPart>span.cellPart_cell2>.cellLabel1 {
+    display: inline-block;
+    position: absolute;
+    left: 1rem;
+}
+.cellPart>span.cellPart_cell2>.addTiming_switchLabel{
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top:0.5rem;
+}
+
+
+
+
+.weekSelectPage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #efeff4;
+    overflow: auto;
+    z-index: 999999;
+}
+
+.weekSelectPage>.weekDiv{
+    width:100%;
+    height:20rem;
+    position:absolute;
+    top:5rem;
+    background:white;
+}
+
+.weekSelectPage>.weekDiv>.weekDivCell{
+    position: relative;
+    width:100%;
+    height: 100%;
+    border-top: 1px solid #cccccc;
+
+    /*border-bottom: 1px solid #cccccc;*/
+}
+
+.weekSelectPage>.weekDiv>.weekDivCell:last-child{
+    width:100%;
+    height: 100%;
+    /*border-top: 1px solid #cccccc;*/
+    border-bottom: 1px solid #cccccc;
+}
+
+.weekSelectPage>.weekDiv>.weekDivCell>.sureImg{
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top:0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.5rem 1.5rem;
+    vertical-align: middle;
+}
